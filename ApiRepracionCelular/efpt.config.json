@@ -1,0 +1,62 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "ContextoDB",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Entidades",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "ApiRepracionCelular",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Cliente]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Reparacion]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ReparacionDetalle]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Rol]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Usuario]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": true,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

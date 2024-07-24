@@ -1,0 +1,6 @@
+@ApiRepracionCelular_HostAddress = http://localhost:5041
+
+GET {{ApiRepracionCelular_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
