@@ -1,6 +1,11 @@
 using ApiRepracionCelular.Entidades;
+using ApiRepracionCelular.Middleware;
 using ApiRepracionCelular.Servicios.Autenticacion;
 using ApiRepracionCelular.Servicios.Autenticacion.Interfaces;
+using ApiRepracionCelular.Servicios.Cliente;
+using ApiRepracionCelular.Servicios.Cliente.Interfaces;
+using ApiRepracionCelular.Servicios.Rol;
+using ApiRepracionCelular.Servicios.Rol.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -20,6 +25,9 @@ builder.Services.AddDbContext<ContextoDB>(options =>
 });
     
 builder.Services.AddScoped<IAutenticacionService, AutenticacionService>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<IRolService, RolService>();
+
 
 var app = builder.Build();
 
@@ -30,6 +38,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseMiddleware<ExcepcionMiddleware>();
 app.UseAuthorization();
 
 app.MapControllers();
