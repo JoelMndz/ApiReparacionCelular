@@ -1,4 +1,4 @@
 ﻿namespace ApiRepracionCelular.Dto.Autenticacion
 {
-    public record LoginRespuestaDTO(int Id, string Email, string Nombre);
+    public record LoginRespuestaDTO(UsuarioDto usuario, string JWT);
 }

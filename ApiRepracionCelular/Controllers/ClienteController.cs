@@ -1,10 +1,12 @@
 ﻿using ApiRepracionCelular.Controllers.Interfaces;
 using ApiRepracionCelular.Dto;
 using ApiRepracionCelular.Servicios.Cliente.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiRepracionCelular.Controllers
 {
+    [Authorize]
     public class ClienteController : ApiControllerBase
     {
         private readonly IClienteService clienteService;

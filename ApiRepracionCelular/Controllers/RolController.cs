@@ -21,7 +21,7 @@ namespace ApiRepracionCelular.Controllers
             var data = await rolService.ObtenerRoles();
             return Ok(data);
         }
-
+        /*
         [HttpPost]
         public async Task<ActionResult> CrearRol(CrearRolDto dto)
         {
@@ -41,6 +41,6 @@ namespace ApiRepracionCelular.Controllers
         {
             var data = await rolService.EliminarRol(id);
             return Ok(data);
-        }
+        }*/
     }
 }
